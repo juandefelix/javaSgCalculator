@@ -22,8 +22,8 @@ class Recipe{
 	 **********************************************************/
 	float specificGravity(){
 		float theGravity=0;
-		for (Malt x : myMalts) {
-		 theGravity += ((x.potentialPoints()-1)*x.weight()/volume);
+		for (Malt m : myMalts) {
+		 theGravity += ((m.potentialPoints()-1)* m.getWeight()/volume);
 		} 
 		return theGravity + 1;
 	}

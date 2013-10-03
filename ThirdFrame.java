@@ -48,7 +48,7 @@ class ThirdFrame {
 		background.add(BorderLayout.EAST, buttonBox);                                   // adding 'buttonBox' to 'background'JPannel 
 		
 		JPanel explanationPanel = new JPanel();
-		JLabel explanation = new JLabel("We're almost done!");
+		JLabel explanation = new JLabel("We're done!");
 		explanationPanel.setBorder(BorderFactory.createEmptyBorder(0, 10, 10,10));
 		explanationPanel.add(explanation);
 		background.add(BorderLayout.NORTH, explanationPanel);

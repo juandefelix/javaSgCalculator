@@ -4,12 +4,12 @@ import java.io.*;
 import java.util.*;
 
 class Malt {
-	String name;
-	float lb;
-	int oz;
+	private String name;
+	private float weight;
 	
-	public Malt(String theName){
+	public Malt(String theName, float lb, int oz){
 		name = theName;
+		weight = lb + (Float)oz/16;
 	}
 	/***************************************************************************
 	 * this METHOD evaluates the varialble potentialPoints of the Malt theName 
@@ -41,29 +41,22 @@ class Malt {
 	 * this METHOD converts the weight in Ounzes Oz into Pounds 
 	 ***********************************************************/
 	
-	public float ozToLb(){
-		return (float) oz/16;
-	}
-	
-	/*********************************************************
-	* this METHOD returns the total weight of the malt in oz *
- 	**********************************************************/
-	float weight() {
-		return lb + ozToLb();
+	public getName(){
+		return name;
 	}
 
+	public getWeight(){
+		return weight;
+	}
+	
 }// end class
 		
 /*class MaltTestDrive {	
 	public static void main(String[] args) {
-		Malt m= new Malt("Acid Malt");
-		//m.name = "Acid Malt";
-		m.oz = 16;
-		m.lb = 1;
-		System.out.println("Test construnctor: " + m.name);
+		Malt m= new Malt("Acid Malt", 1, 16);
+		System.out.println("Test construnctor: " + m.getName);
 		System.out.println("Test potentialPoints: " + m.potentialPoints());
-		System.out.println("Test ozToLb: " + m.ozToLb());
-		System.out.println("Test weight: " + m.weight());
+		System.out.println("Test weight: " + m.getWeight());
 	}
 }
 

@@ -108,9 +108,9 @@ class SecondFrame {
 	 *     LISTENERS     *
 	 *********************/
 	
-	/*********************************************************************************************************
-	 *     NextListener created a new Recipe and adds to the array myMalts all the malts selected in the GUI *
-	 *********************************************************************************************************/
+	/*************************************************************************************************************
+	 *     NextListener created a new Recipe and adds to the arrayList myMalts all the malts selected in the GUI *
+	 *************************************************************************************************************/
 	
 	public class MyNextListener implements ActionListener{
 		public void actionPerformed(ActionEvent a){
